@@ -6,6 +6,7 @@
 :root {
 	--grosor-rojo: 10px;
 	--color-borde: red;
+	--color-borde-hermano: white;
 }
 body {
 	background-color: #dfdfdf;
@@ -40,7 +41,7 @@ footer {
 }
 .borde-rojo-izquierda {
 	height: var(--grosor-rojo);
-	width: 50px;
+	width: 53px;
 	background-color: var(--color-borde);
 	transform: rotate(40deg);
 	position: absolute;
@@ -49,9 +50,28 @@ footer {
 }
 .borde-rojo-izquierda::after {
 	content: '';
-	height: 10px;
+	height: var(--grosor-rojo);
 	width: 201px;
 	background-color: var(--color-borde);
+	position: absolute;
+	transform: rotate(50deg);
+	top: 75px;
+	left: 13px;
+}
+.borde-blanco-izquierda {
+	height: var(--grosor-rojo);
+	width: 53px;
+	background-color: var(--color-borde-hermano);
+	transform: rotate(40deg);
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+.borde-blanco-izquierda::after {
+	content: '';
+	height: var(--grosor-rojo);
+	width: 201px;
+	background-color: var(--color-borde-hermano);
 	position: absolute;
 	transform: rotate(50deg);
 	top: 75px;
