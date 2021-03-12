@@ -7,6 +7,7 @@
 	--grosor-rojo: 10px;
 	--color-borde: red;
 	--color-borde-hermano: white;
+	--blanco: #fff;
 }
 body {
 	background-color: #dfdfdf;
@@ -27,6 +28,10 @@ img {
 }
 header,
 footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	height: 20%;
 	border: 1px solid rosybrown;
 	background: linear-gradient(0.25turn, #07b328, #68d880, #1cdd4a, #76e19d);
@@ -39,6 +44,7 @@ footer {
 	position: relative;
 	overflow: hidden;
 }
+/*  */
 .borde-rojo-izquierda {
 	height: var(--grosor-rojo);
 	width: 53px;
@@ -58,6 +64,7 @@ footer {
 	top: 75px;
 	left: 13px;
 }
+/*  */
 .borde-blanco-izquierda {
 	height: var(--grosor-rojo);
 	width: 53px;
@@ -76,4 +83,35 @@ footer {
 	transform: rotate(50deg);
 	top: 75px;
 	left: 13px;
+}
+/*  */
+.culo-cuadrado {
+	position: absolute;
+	height: 100%;
+	width: 145px;
+	left: 50px;
+	background: linear-gradient(0.25turn, #1c1c4a, #3f375f, #2a275c, #3f375f);
+}
+/*  */
+.culo-blanco {
+	width: 80px;
+	height: 100px;
+	position: absolute;
+	top: 40px;
+	left: 150px;
+	border: 5px solid var(--blanco);
+	border-left: 5px solid transparent;
+	border-top: none;
+	border-bottom: none;
+	border-radius: 42.5%;
+}
+.culo-blanco:after {
+	content: '';
+	height: 55px;
+	border-radius: 50px;
+	width: 5px;
+	background-color: var(--blanco);
+	position: absolute;
+	bottom: -50px;
+	left: 50px;
 }
