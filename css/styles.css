@@ -3,6 +3,10 @@
 	margin: 0;
 	padding: 0;
 }
+:root {
+	--grosor-rojo: 10px;
+	--color-borde: red;
+}
 body {
 	background-color: #dfdfdf;
 	display: flex;
@@ -27,6 +31,7 @@ footer {
 	background: linear-gradient(0.25turn, #07b328, #68d880, #1cdd4a, #76e19d);
 }
 .drawing {
+	/* podria cambiar por rosario blefari album cover */
 	background-image: url('../img/fondo.jpg');
 	height: 60%;
 	/* overflow: hidden; */
@@ -34,12 +39,21 @@ footer {
 	overflow: hidden;
 }
 .borde-rojo-izquierda {
-	height: 10px;
+	height: var(--grosor-rojo);
 	width: 50px;
-	background-color: red;
-
+	background-color: var(--color-borde);
 	transform: rotate(40deg);
 	position: absolute;
 	top: 10px;
 	left: -10px;
+}
+.borde-rojo-izquierda::after {
+	content: '';
+	height: 10px;
+	width: 201px;
+	background-color: var(--color-borde);
+	position: absolute;
+	transform: rotate(50deg);
+	top: 75px;
+	left: 13px;
 }
