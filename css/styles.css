@@ -87,6 +87,19 @@ footer {
 	left: 13px;
 }
 /*  */
+.triangulo-izquierda {
+	width: 0;
+	height: 0;
+	border-left: 50px solid var(--culo-color-rgb);
+	border-top: 31px solid transparent;
+	border-bottom: 50px solid transparent;
+	position: absolute;
+	left: 26px;
+	top: -49px;
+	transform: rotate(-50deg);
+	z-index: 10;
+}
+/*  */
 .culo-cuadrado {
 	position: absolute;
 	height: 100%;
@@ -123,6 +136,7 @@ footer {
 .culo-blanco-dos {
 	margin-left: 30px;
 }
+
 /*  */
 .tringulo-derecha {
 	width: 0;
@@ -152,6 +166,12 @@ footer {
 }
 /*  */
 .culo-cuadrado-derecha {
+	width: 50px;
+	height: 50px;
+	background: var(--culo-color);
+	position: absolute;
+	bottom: 0;
+	right: 75px;
 }
 /*  */
 .culo-rojo-derecha {
