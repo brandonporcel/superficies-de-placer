@@ -12,6 +12,9 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+img {
+	width: 300px;
+}
 .container {
 	border: 1px solid;
 	width: 300px;
@@ -26,4 +29,17 @@ footer {
 .drawing {
 	background-image: url('../img/fondo.jpg');
 	height: 60%;
+	/* overflow: hidden; */
+	position: relative;
+	overflow: hidden;
+}
+.borde-rojo-izquierda {
+	height: 10px;
+	width: 50px;
+	background-color: red;
+
+	transform: rotate(40deg);
+	position: absolute;
+	top: 10px;
+	left: -10px;
 }
